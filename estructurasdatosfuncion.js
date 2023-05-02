@@ -4,8 +4,8 @@ var rls = require("readline-sync");
 var dimensionArreglo = rls.questionInt("Ingrese la dimensi\u00F3n del arreglo: ");
 var nums = new Array(dimensionArreglo);
 function cargarNums(arr) {
-    for (var index = 0; index < dimensionArreglo; index++) {
-        nums[index] = rls.questionInt("Ingrese el numero que quiere poner en el lugar ".concat(index, ": "));
+    for (var index = 0; index < nums.length; index++) {
+        nums[index] = rls.questionInt("Ingrese el numero que quiere poner en el lugar ".concat(index + 1, ": "));
     }
 }
 cargarNums(nums);
