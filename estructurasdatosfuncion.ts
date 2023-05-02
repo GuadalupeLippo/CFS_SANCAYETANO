@@ -1,7 +1,7 @@
 import *as rls from "readline-sync"
 
 let dimensionArreglo : number = rls.questionInt(`Ingrese la dimensión del arreglo: `);
-const nums : number[] = new Array (dimensionArreglo);
+const nums : number[] = new Array [dimensionArreglo];
 
 function cargarNums (arr : number[]) {
     for (let index : number = 0; index < dimensionArreglo; index++) {
