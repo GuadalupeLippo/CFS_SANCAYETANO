@@ -11,7 +11,7 @@ const arrAlum : string[] = new Array(cantidadAlumnos)
 
 function cargarNombres( arr: string[]) {
     for ( let i=0; i<arrAlum.length; i++) {
-        arrAlum[i]= rls.question ("ingrese un nombre: ")
+        arrAlum[i]= rls.question (`ingrese un nombre en el lugar ${i+1}:`)
     }
     
 }

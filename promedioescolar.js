@@ -10,7 +10,7 @@ var cantidadAlumnos = rls.questionInt("ingrese la cantidad de alumnos:");
 var arrAlum = new Array(cantidadAlumnos);
 function cargarNombres(arr) {
     for (var i = 0; i < arrAlum.length; i++) {
-        arrAlum[i] = rls.question("ingrese un nombre: ");
+        arrAlum[i] = rls.question("ingrese un nombre en el lugar ".concat(i + 1, ":"));
     }
 }
 cargarNombres(arrAlum);
