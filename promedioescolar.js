@@ -9,8 +9,8 @@ var rls = require("readline-sync");
 var cantidadAlumnos = rls.questionInt("ingrese la cantidad de alumnos:");
 var arrAlum = new Array(cantidadAlumnos);
 function cargarNombres(arr) {
-    for (var i = 0; i < cantidadAlumnos; i++) {
-        arrAlum[i] = rls.question("ingrese un nombre:");
+    for (var i = 0; i < arrAlum.length; i++) {
+        arrAlum[i] = rls.question("ingrese un nombre: ");
     }
 }
 cargarNombres(arrAlum);
